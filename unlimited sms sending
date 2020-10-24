@@ -1,0 +1,12 @@
+By installing pyautogui and importing time anybody can send unlimited message in web.
+
+import pyautogui
+import time
+message = 50 // sending 50 messages
+
+while message > 0:  // it will stops when 50 sms is sent
+    time.sleep(3)    // take some rest
+    pyautogui.typewrite('Happy Moments')   // your message
+    time.sleep(1)        // stop 1 sec to again send sms to receiver
+    pyautogui.press("enter")  // to pointing the cursor
+    message = message -1
